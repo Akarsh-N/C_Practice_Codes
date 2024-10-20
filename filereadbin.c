@@ -21,7 +21,7 @@ int main()
 
     for(int i= 0; i<5 ; i++)
     {
-       printf("%d\n",data[i]);
+       printf("0x%x\n",data[i]);
     }
     fclose(fp);
 
