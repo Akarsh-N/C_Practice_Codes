@@ -18,7 +18,7 @@ int main()
         exit(1);
     }
 
-    // Read 5 character from stream
+    // Read 6 character from stream
     fread(readFileData,sizeof(char),6, fp);
 
     //Display read data

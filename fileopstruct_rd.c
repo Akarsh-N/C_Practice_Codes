@@ -23,7 +23,7 @@ int main()
         printf("Error in creating the file\n");
         exit(1);
     }
-    //Reads the five first element of the array of structure
+    //Reads the 6 first element of the array of structure
     fread(sAticleworldEmplInfo, sizeof(sAticleworldEmplInfo),6, fp);
 
     for(int i=0;i<6;i++)

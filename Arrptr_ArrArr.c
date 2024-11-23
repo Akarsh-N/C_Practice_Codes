@@ -5,7 +5,7 @@
 typedef struct
 {
   int *data;
-  char  datalength;
+  char datalength;
 }buffer_t;
 
 int main(void)

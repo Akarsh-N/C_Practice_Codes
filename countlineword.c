@@ -21,6 +21,8 @@ int main()
     return 0;
 }
 
+//Ctrl+D to exit 
+
 
 
 

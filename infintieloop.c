@@ -2,7 +2,6 @@
 
 int main()
 {
-    
 	unsigned int x = 10;
 	while (x > 0) {
 		printf("%d\n", x);

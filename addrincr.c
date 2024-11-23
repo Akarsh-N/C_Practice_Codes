@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     float *pfData = NULL; // pointer to float
 
     int aiData[3] = {100, 200 ,300};
-    void *pvData = &aiData[0]; //address of 200
+    void *pvData = &aiData[0]; //address of 100
     //pvData += sizeof(int);
     //printf("Data is %d\n", *(int *)pvData);
     void *pvData3 = &aiData[3];

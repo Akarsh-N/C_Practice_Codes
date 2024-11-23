@@ -16,7 +16,7 @@ int main()
         exit(1);
     }
     //write the array in file
-    fwrite(data, sizeof(data),1, fp);
+    fwrite(data, sizeof(data),1, fp); //very important
     //fwrite(data, sizeof(int),5, fp);
     fclose(fp);
     return 0;
