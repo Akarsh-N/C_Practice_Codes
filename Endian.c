@@ -15,7 +15,7 @@ int main(void)
         printf("Little Endian 0x%X\n",*val);
     }
 
-    uint32_t value;
+    uint32_t value = 0;
     printf("Before Changing Endianness: 0x%X\n",data);
     value = ((data & 0xFF000000) >> 24u) + ((data & 0x00FF0000) >> 8u) + ((data & 0x000000FF) << 24u) + ((data & 0x0000FF00) << 8u);
     printf("After Changing Endianness: 0x%X\n",value);

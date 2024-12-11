@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
     printf("Int Size of structure  =  %p\n",(int *)(psInfo));
 
     iSizeofStructure = (int *)(psInfo + 2) - (int *)(psInfo);
-    printf("Size of structure  =  %d\n",iSizeofStructure); // (Value o/p * (int databytes))i.e 2 * 4 Bytes
+    printf("Size of structure  =  %d\n",iSizeofStructure); // (Value o/p * (int databytes))i.e 4 * 4 Bytes
     printf("Int Size of structure after increment =  %p\n",(int *)(psInfo + 2));
     printf("Int Size of structure  =  %p\n",(int *)(psInfo));
 
