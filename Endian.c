@@ -17,8 +17,18 @@ int main(void)
 
     uint32_t value = 0;
     printf("Before Changing Endianness: 0x%X\n",data);
-    value = ((data & 0xFF000000) >> 24u) + ((data & 0x00FF0000) >> 8u) + ((data & 0x000000FF) << 24u) + ((data & 0x0000FF00) << 8u);
+    value = ((data & 0xFF000000) >> 24u) | ((data & 0x00FF0000) >> 8u) | ((data & 0x000000FF) << 24u) | ((data & 0x0000FF00) << 8u);
     printf("After Changing Endianness: 0x%X\n",value);
+
+    int count = 0;
+    for(int i = 0; i <= (sizeof(int) * 8)-1 ;i++)
+	{
+		if(value & (0x01 << i))
+		{
+			count++;
+		}
+	}
+    printf("No of 1's in value is %d\n",count);
 
     unsigned int num = 0x12345678;
     unsigned char *ptr;
